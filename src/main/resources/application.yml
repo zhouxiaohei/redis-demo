@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: redis-demo-service
+  swagger:
+    package: com.zhou.demo.redis.controller
+  redis:
+    host: 127.0.0.1
+#    port: 7004
+#    cluster:
+#      nodes: 127.0.0.1:7000,127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004,127.0.0.1:7005
+
+server:
+  port: 11001
+
+eureka:
+  client:
+    enabled: false

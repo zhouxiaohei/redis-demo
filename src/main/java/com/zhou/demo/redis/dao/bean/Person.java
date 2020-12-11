@@ -1,0 +1,28 @@
+package com.zhou.demo.redis.dao.bean;
+
+
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+/**
+ * @ClassName Person
+ * @Description
+ * @Author JackZhou
+ **/
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Person implements Serializable {
+   @ApiModelProperty(value="用户id")
+   private String id;
+   @ApiModelProperty(value="用户名")
+   private String name;
+   @ApiModelProperty(value="年纪", example = "0")
+   private Integer age;
+
+}
